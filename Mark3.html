@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Food Feedback</title>
+	<style type="text/css">
+		.jumbotron{
+			background: url("https://cdn.dribbble.com/users/662361/screenshots/2166285/chriswestgate_hotodogspace_01.gif")center center / cover no-repeat;
+		}
+		.crop{
+			 width: 100%;
+			 height: 250px;
+			 background-size: cover;
+			 background-position: center;
+		}
+		body{
+			background: grey	;
+		}
+		html {
+			  font-size: 1rem;
+			}
+
+			@include media-breakpoint-up(sm) {
+			  html {
+			    font-size: 1.2rem;
+			  }
+			}
+
+			@include media-breakpoint-up(md) {
+			  html {
+			    font-size: 1.6rem;
+			  }
+			}
+
+			@include media-breakpoint-up(lg) {
+			  html {
+			    font-size: 2rem;
+			  }
+			}
+			#mc1,#mc2,#sc1,#sc2{
+				color: white;
+				background-color: black;
+			}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark	fixed-top py-0">
+		<div class="container">
+		  <a class="navbar-brand" href="#">ThoughtWorks <i class="fas fa-utensils"></i></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item p-2">
+		        <a class="nav-link" href="#mc1">Main Course - 1 <i class="fas fa-hamburger"></i><span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item p-2">
+		        <a class="nav-link" href="#mc2">Main Course - 2 <i class="fas fa-pizza-slice"></i></a>
+		      </li>
+		      <li class="nav-item p-2">
+		        <a class="nav-link" href="#sc1">Side Course - 1 <i class="fas fa-bread-slice"></i></a>
+		      </li>
+		      <li class="nav-item p-2">
+		        <a class="nav-link" href="#sc2">Side Course - 2 <i class="fas fa-ice-cream"></i></a>
+		      </li>
+		     </ul>
+		  </div>
+		</div>
+	</nav>
+
+	<div class="container text-center mt-2">
+		<section class="jumbotron text-center">
+			<h1 class="display-1">Food Feedback</h1>
+			<p style="font-size: 2rem">To submit Food Feedback.</p>
+		</section>
+	</div>
+	<form method="POST" action="mark3.php">
+		<div class="container text-center rounded" id="mc1">
+			<h1 class="display-4 p-2">Main Course - 1 </h1>
+			<h2 class="p-2">How was Main Course - 1?</h2>
+		<section id="feedback">
+			<div >
+				<div class="row justify-content-around">
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="mcid11" name="mcn1" value="Spicy" class="custom-control-input" >
+						  <label class="custom-control-label" for="mcid11"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/lGFQHKtkq6Wkg/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Too Spicy <i class="fas fa-pepper-hot"></i></h5>
+							  
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="mcid12" name="mcn1" value="Salty" class="custom-control-input" >
+						  <label class="custom-control-label" for="mcid12"><div class="card mb-3">
+							<img  src="https://media.giphy.com/media/2vmho5c3fKQ2I8yc7v/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Too Salty. <img src="https://image.flaticon.com/icons/svg/1764/1764535.svg" style="height: 20px; width: 20px;"></h5>
+							 
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="mcid13" name="mcn1" value="Bad" class="custom-control-input" >
+						  <label class="custom-control-label" for="mcid13"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/Je2hek0m28V44/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Bad. <i class="fas fa-thumbs-down"></i></h5>
+							 
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="mcid14" name="mcn1" value="Noice" class="custom-control-input" required>
+						  <label class="custom-control-label" for="mcid14"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/3o72FcJmLzIdYJdmDe/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Noice. <i class="fas fa-thumbs-up"></i></h5>
+							
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+
+	<div class="container text-center" id="mc2">
+			<h1 class="p-2" >Main Course - 2</h1>
+			<h2 class="p-2">How was Main Course - 2?</h2>
+		<section id="feedback">
+			<div >
+				<div class="row justify-content-around">
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="mcid21" name="mcn2" value="Spicy" class="custom-control-input" >
+						  <label class="custom-control-label" for="mcid21"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/lGFQHKtkq6Wkg/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Too Spicy <i class="fas fa-pepper-hot"></i></h5>
+							  
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="mcid22" name="mcn2" value="Salty" class="custom-control-input" >
+						  <label class="custom-control-label" for="mcid22"><div class="card mb-3">
+							<img  src="https://media.giphy.com/media/2vmho5c3fKQ2I8yc7v/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Too Salty. <img src="https://image.flaticon.com/icons/svg/1764/1764535.svg" style="height: 20px; width: 20px;"></h5>
+							 
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="mcid23" name="mcn2" value="Bad" class="custom-control-input" >
+						  <label class="custom-control-label" for="mcid23"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/Je2hek0m28V44/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Bad. <i class="fas fa-thumbs-down"></i></h5>
+							 
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="mcid24" name="mcn2" value="Noice" class="custom-control-input" >
+						  <label class="custom-control-label" for="mcid24"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/3o72FcJmLzIdYJdmDe/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5  style="color: black;" class="card-title">Noice. <i class="fas fa-thumbs-up"></i></h5>
+							
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+			
+	
+
+
+	<div class="container text-center"  id="sc1">
+			<h1 class="p-2">Side Course - 1 </h1>
+			<h2 class="p-2">How was Side Course - 1?</h2>
+		<section id="feedback">
+			<div >
+				<div class="row justify-content-around">
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="scid11" name="scn1" value="Spicy" class="custom-control-input" >
+						  <label class="custom-control-label" for="scid11"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/lGFQHKtkq6Wkg/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Too Spicy <i class="fas fa-pepper-hot"></i></h5>
+							  
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="scid12" name="scn1" value="Salty" class="custom-control-input" >
+						  <label class="custom-control-label" for="scid12"><div class="card mb-3">
+							<img  src="https://media.giphy.com/media/2vmho5c3fKQ2I8yc7v/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Too Salty. <img src="https://image.flaticon.com/icons/svg/1764/1764535.svg" style="height: 20px; width: 20px;"></h5>
+							 
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="scid13" name="scn1" value="Bad" class="custom-control-input" >
+						  <label class="custom-control-label" for="scid13"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/Je2hek0m28V44/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Bad. <i class="fas fa-thumbs-down"></i></h5>
+							 
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="scid14" name="scn1" value="sc1g" class="custom-control-input" >
+						  <label class="custom-control-label" for="scid14"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/3o72FcJmLzIdYJdmDe/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Noice. <i class="fas fa-thumbs-up"></i></h5>
+							
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+
+	<div class="container text-center rounded" id="sc2">
+			<h1 class="p-2" >Side Course - 2</h1>
+			<h2 class="p-2">How was Side Course - 2?</h2>
+		<section id="feedback">
+			<div >
+				<div class="row justify-content-around">
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="scid21" name="scn2" value="Spicy" class="custom-control-input" >
+						  <label class="custom-control-label" for="scid21"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/lGFQHKtkq6Wkg/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Too Spicy <i class="fas fa-pepper-hot"></i></h5>
+							  
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="scid22" name="scn2" value="Salty" class="custom-control-input" >
+						  <label class="custom-control-label" for="scid22"><div class="card mb-3">
+							<img  src="https://media.giphy.com/media/2vmho5c3fKQ2I8yc7v/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Too Salty. <img src="https://image.flaticon.com/icons/svg/1764/1764535.svg" style="height: 20px; width: 20px;"></h5>
+							 
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="scid23" name="scn2" value="Bad" class="custom-control-input" >
+						  <label class="custom-control-label" for="scid23"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/Je2hek0m28V44/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Bad. <i class="fas fa-thumbs-down"></i></h5>
+							 
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="custom-control custom-radio custom-control-inline">
+						  <input type="radio" id="scid24" name="scn2" value="Noice" class="custom-control-input" >
+						  <label class="custom-control-label" for="scid24"><div class="card mb-3">
+							<img src="https://media.giphy.com/media/3o72FcJmLzIdYJdmDe/giphy.gif" class="card-img-top crop img-thumbnail" alt="...">
+							<div class="card-body">
+							  <h5 style="color: black;" class="card-title">Noice. <i class="fas fa-thumbs-up"></i></h5>
+							
+					 		</div>
+						</div></label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+	
+  <input class="d-none" type="text" id="vinp" name="vinp">
+	<div class="text-center m-2 p-2">
+		<input type="submit"></button>
+	</div>
+</form>
+<div class="text-center p-2">
+	<button id='btnGiveCommand' type="button" class="btn btn-md btn-primary m-1">V-Feedback</button>
+    
+    <h2 id='message' class="m-1"></h2>
+  </div>
+	<script>
+		function myFunction() {
+			console.log("hi");
+		  var x = document.getElementById("message").innerHTML;
+		  console.log(x);
+		  document.getElementById("vinp").value = x;
+		}
+        var message = document.querySelector('#message');
+        var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+        var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
+        var grammar = '#JSGF V1.0;'
+        var recognition = new SpeechRecognition();
+        var speechRecognitionList = new SpeechGrammarList();
+        speechRecognitionList.addFromString(grammar, 1);
+        recognition.grammars = speechRecognitionList;
+        recognition.lang = 'en-US';
+        recognition.interimResults = false;
+        recognition.onresult = function(event) {
+            var last = event.results.length - 1;
+            var command = event.results[last][0].transcript;
+            message.textContent = 'Feedback: ' + command + '.';
+            console.log(event.results);
+            
+        };
+        recognition.onspeechend = function() {
+            recognition.stop();
+        };
+        recognition.onerror = function(event) {
+            message.textContent = 'Error occurred in recognition: ' + event.error;
+        }        
+        document.querySelector('#btnGiveCommand').addEventListener('click', function(event){
+        	event.preventDefault();
+            recognition.start();
+        });
+    </script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
